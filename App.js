@@ -7,22 +7,22 @@ import Categoria from './src/components/Categoria';
 
 const products = [
   {
-    Image: './assets/techshop/produto01.png',
+    Image: require('../trabalho01/assets/techshop/produto'),
     name: 'Apple notebook MacBook Air',
     price: 'R$ 8.999,00',
   },
   {
-    Image: './assets/techshop/produto01.png',
+    Image: require('../../assets/techshop/produto01.png'),
     name: 'Apple notebook MacBook Air',
     price: 'R$ 8.999,00',
   },
   {
-    Image: './assets/techshop/produto01.png',
+    Image: require('../../assets/techshop/produto01.png'),
     name: 'Apple notebook MacBook Air',
     price: 'R$ 8.999,00',
   },
   {
-    Image: './assets/techshop/produto01.png',
+    Image: require('../../assets/techshop/produto01.png'),
     name: 'Apple notebook MacBook Air',
     price: 'R$ 8.999,00',
   },
