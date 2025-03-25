@@ -1,29 +1,23 @@
-import {TouchableOpacity, Text, StyleSheet} from 'react-native'
-export default function Categoria({nome}) {
+import { View, Text, StyleSheet } from "react-native";
+
+export default function Categoria({ tipo }) {
   return (
-    <TouchableOpacity activeOpacity={0.5} style={style.categorias}>
-      <Text style={style.title}>{nome}</Text>
-    </TouchableOpacity>
+    <View style={styles.container}>
+      <Text style={styles.text}>{tipo.toUpperCase()}</Text>
+    </View>
   );
 }
 
- const style = StyleSheet.create({
-  categorias: {
+const styles = StyleSheet.create({
+  container: {
+    backgroundColor: "#DBEAFE",
     paddingHorizontal: 12,
     paddingVertical: 8,
-    backgroundColor: '#BFDBFE',
-    maxHeight: 36,
     borderRadius: 4,
-    maxWidth: '100%',
   },
-  title: {
-    fontFamily: 'Roboto',
+  text: {
     fontSize: 14,
-    fontWeight: 'bold',
-    textTransform: 'uppercase',
-    color: '#2563EB',
+    fontWeight: "600",
+    color: "#2563EB",
   },
-
- })
-
- 
+});
